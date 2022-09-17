@@ -60,54 +60,55 @@ export default function Explore() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" marked="center" align="center" component="h2">
-       - Explore More -
+        - Explore More -
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap', }}>
         {images.map((image) => (
-          <ImageIconButton
-            key={image.title}
-            style={{
-              width: image.width,
-            }}
-            href={image.redirect}
-          >
-            <Box
-              sx={{
-                position: 'absolute',
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center 40%',
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
-            <ImageBackdrop className="imageBackdrop" />
-            <Box
-              sx={{
-                position: 'absolute',
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'common.white',
-              }}
-            >
-              <Typography
-                component="h3"
-                variant="h6"
-                color="inherit"
-                className="imageTitle"
+         
+              <ImageIconButton
+                key={image.title}
+                style={{
+                  width: image.width,
+                }}
+                href={image.redirect}
               >
-                {image.title}
-                <div className="imageMarked" />
-              </Typography>
-            </Box>
-          </ImageIconButton>
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center 40%',
+                    backgroundImage: `url(${image.url})`,
+                  }}
+                />
+                <ImageBackdrop className="imageBackdrop" />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'common.white',
+                  }}
+                >
+                  <Typography
+                    component="h3"
+                    variant="h6"
+                    color="inherit"
+                    className="imageTitle"
+                  >
+                    {image.title}
+                    <div className="imageMarked" />
+                  </Typography>
+                </Box>
+              </ImageIconButton>
         ))}
       </Box>
     </Container>

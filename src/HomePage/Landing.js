@@ -6,6 +6,7 @@ import Explore from './Explore';
 import TwoCards from './TwoCards';
 import ParticlesBg from "particles-bg";
 import NavBar from './NavBar';
+import Photography from '../Components/Photography';
 
 
 
@@ -30,7 +31,7 @@ function Landing() {
     
   return (
       <React.Fragment>
-          <ParticlesBg type="square" bg={true} />
+          <ParticlesBg type="circle" bg={true} />
           <Box mt={40} mb={30}>
               <div className={classes.root}>
                   <Typography variant='h1'>
@@ -47,9 +48,9 @@ function Landing() {
                   
                              
               </div>
-              <hr />
               <div ref={ref}></div>
-              {/*<NavBar /> */}
+              <Photography />
+              <NavBar />
               <TwoCards />
               
               

@@ -1,9 +1,10 @@
 import React from 'react'
-import About from './Components/About'
-import Contact from './Components/Contact'
-import Explore from './Components/Explore'
-import Footer from './Components/Footer'
-import Landing from './Components/Landing'
+import About from './HomePage/About'
+import Contact from './HomePage/Contact'
+import Explore from './HomePage/Explore'
+import Footer from './HomePage/Footer'
+import Landing from './HomePage/Landing'
+
 
 function Home() {
   return (
@@ -17,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

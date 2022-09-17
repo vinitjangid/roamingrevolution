@@ -12,7 +12,8 @@ const useStyles = makeStyles({
         position: 'relative',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundImage: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400'
     },
     box: {
         border: '2px solid',
@@ -20,7 +21,7 @@ const useStyles = makeStyles({
         boxShadow: '3px 3px 3px 3px #C0C0C0',
         minHeight: '25em',
         width: '25em',
-        backgroundImage: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400'
+        backgroundImage: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
     }
 });
 
@@ -34,12 +35,16 @@ function TwoCards() {
                 
                     <Grid container spacing={30}>
                         <Grid item xs={6}>
+                            
                             <Box className={classes.box}>
-                                <h1>Tech</h1>
-                                <Box >
+                                
+                            <img src='https://media3.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif?cid=790b7611c62261a8c91b0818808da33b8dabf834baf5d800&rid=giphy.gif&ct=g' alt='img'/>
+                                
+                                
                                     <Button varient='contained'>
                                         Professional
                                     </Button>
+                                    <Box >
                             </Box>
                             </Box>
 
@@ -54,7 +59,6 @@ function TwoCards() {
                 
             </Box>
             </div>
-            <hr />
         </Fragment>
     )
 }

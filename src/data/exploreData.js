@@ -1,6 +1,6 @@
 export const images = [
     {
-      url: 'https://camo.githubusercontent.com/4fa9a5bdefafee7e59ad2086429306dfc0c902d0db4d2d1fdfb534b1767d9f62/68747470733a2f2f646576656c6f706572732e67697068792e636f6d2f6272616e63682f6d61737465722f7374617469632f6170692d35313264333663303936363236383237313731303861333862626235633537642e676966',
+      url: 'https://pixabay.com/get/g633002f7b3ebb6a81d3618164853ecd68edc678cc4624ea487a9cc520675705c2126cead32db04c5b7320d5247ea9347_640.jpg',
       title: 'Github',
       width: '40%',
       redirect: 'https://github.com/vinitjangid'
@@ -33,13 +33,13 @@ export const images = [
       url: 'https://pixabay.com/get/g9e1c5e1a295cef8441ef3d1b629e59e4b1de90a3137d1eab501e903cfebc7c1d3b428f6ae9b6352614cbb7fc7ee967e19c27de53723d5096c3a198c3648cf9cb_1920.jpg',
       title: 'Photography',
       width: '24%',
-      redirect: ''
+      redirect: '/photography'
     },
     {
-      url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-      title: 'Walking',
+      url: 'https://pixabay.com/get/g7e49a0f648d401ad41fdc8b4c18a67d76ef986e9f86ceb6549a502be5d0d7ec3de47a74f526647c39f46896a36c47519_640.png',
+      title: 'download',
       width: '30%',
-      redirect: ''
+      redirect: '../assets/cv.pdf'
     },
     {
       url: 'https://pixabay.com/get/g9e15bc60f96b006c8f1b3cfdaacf51d6805429e4193665bc586e980d13a9264a319474eaaf297a5e67a53dc106b10517_640.jpg',
